@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <form action="/portal/create-article/" method="POST">
+    {% csrf_token %}
+    <label for="title">enter the title</label>
+    <input type="text" name="title" id="title"> <br>
+
+    <label for="content"> enter the content</label> <br>
+    <textarea name="content" id="content" cols="30" rows="10"></textarea> <br>
+
+    <label for="date">enter your publish date</label>
+    <input type="text" name="date" id="date"><br>
+
+    <label for="ctgry">enter the categorty</label>
+    <input type="text" name="ctgrt" id="ctgrt"> <br>
+
+    <button type="submit"> submit </button>
+
+    </form>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+{#    <form action='/portal/create-category/' method='POST'>#}
+    <form action='/portal/category-form/' method='POST'>
+    {% csrf_token %}
+{#        <label for="category">Enter category name </label>#}
+{#        <input type="text"  id="category", name="category">#}
+        <p>{{ form }}</p>
+
+        <button type="submit"> submit </button>
+
+    </form>
+</body>
+</html>
